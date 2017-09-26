@@ -1,0 +1,37 @@
+{
+  "name": "moneysafe",
+  "version": "1.1.0",
+  "description": "Convenient, safe money calculations in JS",
+  "main": "source/moneysafe.js",
+  "scripts": {
+    "lint": "eslint source && echo 'Lint complete.'",
+    "test": "node source/index.test.js",
+    "watch": "watch 'clear && npm run -s test && npm run lint' source",
+    "verify": "npm run -s test && npm run -s lint",
+    "precommit": "npm run verify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericelliott/moneysafe.git"
+  },
+  "keywords": [
+    "money",
+    "finance",
+    "shopping",
+    "currency",
+    "dollars",
+    "cents"
+  ],
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericelliott/moneysafe/issues"
+  },
+  "homepage": "https://github.com/ericelliott/moneysafe#readme",
+  "devDependencies": {
+    "eslint": "4.3.0",
+    "tape": "4.7.0",
+    "watch": "1.0.2"
+  },
+  "dependencies": {}
+}
